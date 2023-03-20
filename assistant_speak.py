@@ -296,9 +296,9 @@ def send_email(text):
         mail = smtplib.SMTP('smtp.gmail.com', 587)
         mail.ehlo()
         mail.starttls()
-        mail.login('ttqgiao.19it6@vku.udn.vn', 'giao241001') 
-        mail.sendmail('ttqgiao.19it6@vku.udn.vn', 
-                      'tttphuong.19it6@vku.udn.vn', content.encode('utf-8')) 
+        mail.login('diachiEmail', 'password') 
+        mail.sendmail('Diachiemailnguoigui', 
+                      'diachiemailnguoinhan', content.encode('utf-8')) 
         mail.close()
         put_answer('Email của bạn vùa được gửi. Bạn check lại email nhé hihi.')
         put_answer("Bạn cần bot giúp thêm gì không ạ")
